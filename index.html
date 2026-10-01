@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ateliers Médiation Numérique — Cédric Waltener</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://cedric-waltener.github.io/mediateur-numerique/">
+<script>
+  // Adresse courte : renvoie vers le site des ateliers, en gardant la page demandee
+  // (ex. /inscription.html -> /mediateur-numerique/inscription.html).
+  (function () {
+    var path = location.pathname;
+    if (path.indexOf('/mediateur-numerique') === 0) path = '/';
+    location.replace('/mediateur-numerique' + path + location.search + location.hash);
+  })();
+</script>
+<meta http-equiv="refresh" content="0; url=/mediateur-numerique/">
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f5f4f0; color: #1f2a26; font-family: system-ui, sans-serif; text-align: center; padding: 16px; }
+  a { color: #35604f; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { body { background: #1e2422; color: #e8ece9; } a { color: #8fc3ab; } }
+</style>
+</head>
+<body>
+  <p>Redirection vers les <a href="/mediateur-numerique/">Ateliers Médiation Numérique</a>…</p>
+</body>
+</html>
